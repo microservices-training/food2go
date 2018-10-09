@@ -1,10 +1,11 @@
 package net.chrisrichardson.ftgo.kitchenservice.contract;
 
 import io.eventuate.tram.springcloudcontractsupport.EventuateContractVerifierConfiguration;
-import net.chrisrichardson.ftgo.kitchenservice.api.TicketDetails;
-import net.chrisrichardson.ftgo.kitchenservice.domain.KitchenService;
-import net.chrisrichardson.ftgo.kitchenservice.domain.Ticket;
-import net.chrisrichardson.ftgo.kitchenservice.messagehandlers.KitchenServiceMessageHandlersConfiguration;
+import net.training.ftgo.kitchenservice.api.TicketDetails;
+import net.training.ftgo.kitchenservice.domain.KitchenService;
+import net.training.ftgo.kitchenservice.domain.Ticket;
+import net.training.ftgo.kitchenservice.messagehandlers.KitchenServiceMessageHandlersConfiguration;
+
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

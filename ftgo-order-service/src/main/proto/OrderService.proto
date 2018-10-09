@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "net.chrisrichardson.ftgo.orderservice.grpc";
+option java_package = "net.training.ftgo.orderservice.grpc";
 option java_outer_classname = "OrderServiceProto";
 option objc_class_prefix = "OS";
 

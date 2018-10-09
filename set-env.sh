@@ -9,7 +9,7 @@ if [ -z "$DOCKER_HOST_IP" ] ; then
 fi
 
 echo DOCKER_HOST_IP is $DOCKER_HOST_IP
-
+sleep 1m
 export SPRING_DATASOURCE_URL=jdbc:mysql://${DOCKER_HOST_IP}/eventuate
 export SPRING_DATASOURCE_USERNAME=mysqluser
 export SPRING_DATASOURCE_PASSWORD=mysqlpw

@@ -23,13 +23,13 @@ package:
 
 functions:
   create-restaurant:
-    handler: net.chrisrichardson.ftgo.restaurantservice.lambda.CreateRestaurantRequestHandler
+    handler: net.training.ftgo.restaurantservice.lambda.CreateRestaurantRequestHandler
     events:
       - http:
           path: restaurants
           method: post
   find-restaurant:
-    handler: net.chrisrichardson.ftgo.restaurantservice.lambda.FindRestaurantRequestHandler
+    handler: net.training.ftgo.restaurantservice.lambda.FindRestaurantRequestHandler
     events:
       - http:
           path: restaurants/{restaurantId}

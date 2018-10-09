@@ -1,4 +1,4 @@
-package net.chrisrichardson.ftgo.orderservice;
+package net.training.ftgo.orderservice;
 
 import io.eventuate.tram.inmemory.TramInMemoryConfiguration;
 import org.junit.runner.RunWith;

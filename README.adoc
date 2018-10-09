@@ -62,15 +62,15 @@ This section maps the chapters to the code.
 The link:./ftgo-order-service[ftgo-order-service] uses sagas to maintain data consistency:
 
 * link:./ftgo-order-service/src/main/java/net/chrisrichardson/ftgo/orderservice/sagas/createorder/CreateOrderSaga.java[CreateOrderSaga]
-* link:./ftgo-order-service/src/main/java/net/chrisrichardson/ftgo/orderservice/sagas/cancelorder/CancelOrderSaga.java[CancelOrderSaga]
-* link:./ftgo-order-service/src/main/java/net/chrisrichardson/ftgo/orderservice/sagas/reviseorder/ReviseOrderSaga.java[ReviseOrderSaga]
+* link:./ftgo-order-service/src/main/java/net/training/ftgo/orderservice/sagas/cancelorder/CancelOrderSaga.java[CancelOrderSaga]
+* link:./ftgo-order-service/src/main/java/net/training/ftgo/orderservice/sagas/reviseorder/ReviseOrderSaga.java[ReviseOrderSaga]
 
 The services that participate in these sagas define the following command handlers:
 
-* `Accounting Service` link:./ftgo-accounting-service/src/main/java/net/chrisrichardson/ftgo/accountingservice/messaging/AccountingServiceCommandHandler.java[AccountingServiceCommandHandler]
-* `Consumer Service` link:./ftgo-consumer-service/src/main/java/net/chrisrichardson/ftgo/consumerservice/domain/ConsumerServiceCommandHandlers.java[ConsumerServiceCommandHandlers]
-* `Kitchen Service` link:./ftgo-kitchen-service/src/main/java/net/chrisrichardson/ftgo/kitchenservice/messagehandlers/KitchenServiceCommandHandler.java[KitchenServiceCommandHandler]
-* `Order Service` link:./ftgo-order-service/src/main/java/net/chrisrichardson/ftgo/orderservice/service/OrderCommandHandlers.java[OrderCommandHandlers]
+* `Accounting Service` link:./ftgo-accounting-service/src/main/java/net/training/ftgo/accountingservice/messaging/AccountingServiceCommandHandler.java[AccountingServiceCommandHandler]
+* `Consumer Service` link:./ftgo-consumer-service/src/main/java/net/training/ftgo/consumerservice/domain/ConsumerServiceCommandHandlers.java[ConsumerServiceCommandHandlers]
+* `Kitchen Service` link:./ftgo-kitchen-service/src/main/java/net/training/ftgo/kitchenservice/messagehandlers/KitchenServiceCommandHandler.java[KitchenServiceCommandHandler]
+* `Order Service` link:./ftgo-order-service/src/main/java/net/training/ftgo/orderservice/service/OrderCommandHandlers.java[OrderCommandHandlers]
 
 
 
@@ -79,22 +79,22 @@ The services that participate in these sagas define the following command handle
 All the services' business logic is implemented using Domain-Driven design aggregates.
 
 * `Accounting Service`
-** link:./ftgo-accounting-service/src/main/java/net/chrisrichardson/ftgo/accountingservice/domain/Account.java[`Account`] aggregate in the link:./ftgo-accounting-service[ftgo-accounting-service]
+** link:./ftgo-accounting-service/src/main/java/net/training/ftgo/accountingservice/domain/Account.java[`Account`] aggregate in the link:./ftgo-accounting-service[ftgo-accounting-service]
 * `Consumer Service`
-**  link:./ftgo-consumer-service/src/main/java/net/chrisrichardson/ftgo/consumerservice/domain/Consumer.java[Consumer]
+**  link:./ftgo-consumer-service/src/main/java/net/training/ftgo/consumerservice/domain/Consumer.java[Consumer]
 * `Order Service`
-** link:./ftgo-order-service/src/main/java/net/chrisrichardson/ftgo/orderservice/domain/Order.java[Order]
-** link:./ftgo-order-service/src/main/java/net/chrisrichardson/ftgo/orderservice/domain/Restaurant.java[Restaurant]
+** link:./ftgo-order-service/src/main/java/net/training/ftgo/orderservice/domain/Order.java[Order]
+** link:./ftgo-order-service/src/main/java/net/training/ftgo/orderservice/domain/Restaurant.java[Restaurant]
 * `Kitchen Service`
-**  link:./ftgo-kitchen-service/src/main/java/net/chrisrichardson/ftgo/kitchenservice/domain/Restaurant.java[Restaurant]
-** link:./ftgo-kitchen-service/src/main/java/net/chrisrichardson/ftgo/kitchenservice/domain/Ticket.java[Ticket]
+**  link:./ftgo-kitchen-service/src/main/java/net/training/ftgo/kitchenservice/domain/Restaurant.java[Restaurant]
+** link:./ftgo-kitchen-service/src/main/java/net/training/ftgo/kitchenservice/domain/Ticket.java[Ticket]
 * `Restaurant Service`
-** link:./ftgo-restaurant-service/src/main/java/net/chrisrichardson/ftgo/restaurantservice/domain/Restaurant.java[Restaurant]
+** link:./ftgo-restaurant-service/src/main/java/net/training/ftgo/restaurantservice/domain/Restaurant.java[Restaurant]
 
 
 === Chapter 6 Developing business logic with event sourcing
 
-* The link:./ftgo-accounting-service/src/main/java/net/chrisrichardson/ftgo/accountingservice/domain/Account.java[`Account`] aggregate in the link:./ftgo-accounting-service[ftgo-accounting-service] is implemented using event sourcing
+* The link:./ftgo-accounting-service/src/main/java/net/training/ftgo/accountingservice/domain/Account.java[`Account`] aggregate in the link:./ftgo-accounting-service[ftgo-accounting-service] is implemented using event sourcing
 
 === Chapter 7 Implementing queries in a microservice architecture
 

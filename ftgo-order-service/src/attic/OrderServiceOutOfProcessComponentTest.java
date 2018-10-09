@@ -1,4 +1,4 @@
-package net.chrisrichardson.ftgo.orderservice;
+package net.training.ftgo.orderservice;
 
 import io.eventuate.jdbckafka.TramJdbcKafkaConfiguration;
 import org.junit.runner.RunWith;
